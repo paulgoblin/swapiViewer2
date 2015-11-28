@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="swapiApp">
+
+<head>
+  <title>Swapi</title>
+  <!-- Bootstrap CSS -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Angular -->
+  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.7/angular.js" data-semver="1.4.7"></script>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+
+  <!--style.css-->
+  <link rel="stylesheet" href="partials/style.css">
+
+</head>
+
+<body class="container">
+  <h2>SWAPI Navigator</h2>
+  <div class='callout' ng-controller="PlanetCtrl">
+    <div class="row">
+      <div class="span12">
+        <swapi-planets-selector residents="3"></swapi-planets-selector>
+        <swapi-planet ng-show='planetSelected'></swapi-planet>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery --> 
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <!--Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
